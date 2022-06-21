@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page isErrorPage="true" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.munja{text-align:center;}
+.pic{align:center;}
+</style>
+</head>
+<body>
+<img class="pic" alt="" src="./img/error.jpg"><br>
+<h1 class="munja">다음과 같은 에러가 발생하였습니다.</h1><br>
+<%= exception.getMessage() %>
+
+</body>
+</html>

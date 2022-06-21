@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Tue Jun 21 16:50:08 KST 2022
+org.eclipse.jst.jee.server\:chap02=C\:\\apache-tomcat-9\\wtpwebapps\\chap02
+org.eclipse.jst.jee.server\:chap04=C\:\\apache-tomcat-9\\wtpwebapps\\chap04
+org.eclipse.jst.jee.server\:chap03=C\:\\apache-tomcat-9\\wtpwebapps\\chap03

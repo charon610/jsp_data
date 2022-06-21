@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSP</title>
+</head>
+<body>
+<h3>프론트 페이지</h3>
+
+<h2>홈페이지 입니다.</h2>
+<a href="08_sub.jsp">서브 페이지로 이동하기</a><br>
+
+<hr>
+<div id="copyright">
+Copyright ⓒ 2014 by (이름) All Pictures cannot be copied without permission.<br>
+Copyright (C) 2014 (이름) all rights reserved. Copyright for (이름) all rights reserved.
+</div>
+
+
+<%@ include file="footer.jsp" %>
+</body>
+</html>
