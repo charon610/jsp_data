@@ -42,13 +42,13 @@
 		<tr>
 			<td>이메일</td>
 			<td>
-			<input type="text" name="email" size="20">*
+			<input type="text" name="email" size="20">
 			</td>
 		</tr>
 		<tr>
 			<td>전화번호</td>
 			<td>
-			<input type="text" name="phone" size="20">*
+			<input type="text" name="phone" size="20">
 			</td>
 		</tr>
 		<tr>

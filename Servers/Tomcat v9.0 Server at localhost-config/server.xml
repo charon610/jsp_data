@@ -152,7 +152,9 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="chap02" path="/chap02" reloadable="true" source="org.eclipse.jst.jee.server:chap02"/><Context docBase="chap03" path="/chap03" reloadable="true" source="org.eclipse.jst.jee.server:chap03"/><Context docBase="chap04" path="/chap04" reloadable="true" source="org.eclipse.jst.jee.server:chap04"/></Host>
+      <Context docBase="chap02" path="/chap02" reloadable="true" source="org.eclipse.jst.jee.server:chap02"/><Context docBase="chap03" path="/chap03" reloadable="true" source="org.eclipse.jst.jee.server:chap03"/><Context docBase="chap04" path="/chap04" reloadable="true" source="org.eclipse.jst.jee.server:chap04"/><Context docBase="chap05" path="/chap05" reloadable="true" source="org.eclipse.jst.jee.server:chap05"/><Context docBase="chap06" path="/chap06" reloadable="true" source="org.eclipse.jst.jee.server:chap06"/><Context docBase="chap07" path="/chap07" reloadable="true" source="org.eclipse.jst.jee.server:chap07"/><Context docBase="chap08" path="/chap08" reloadable="true" source="org.eclipse.jst.jee.server:chap08">
+      <Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="bg" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="bg"/>
+      </Context><Context docBase=" chap09" path="/_chap09" reloadable="true" source="org.eclipse.jst.jee.server: chap09"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원 관리</title>
-<script type="text/javascript" src="../script/member.js"></script>
+<script type="text/javascript" src="script/member.js"></script>
 </head>
 <body>
 	<h2>아이디 중복확인</h2>
