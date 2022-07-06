@@ -1,7 +1,6 @@
 package com.saeyan.controller.action;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,18 +10,23 @@ import javax.servlet.http.HttpServletResponse;
 import com.saeyan.dao.BoardDAO;
 import com.saeyan.dto.BoardVO;
 
-public class BoardListAction implements Action{
-	 @Override
+public class BoardUpdateFormAction implements Action{
+	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		 String url = "/board/boardList.jsp";
-		 
-		 BoardDAO bDao = BoardDAO.getInstance();
-		 
-		 List<BoardVO> boardList = bDao.selectAllBoards();
-		 
-		 request.setAttribute("boardList", boardList);
-		 
-		 RequestDispatcher dispatcher = request.getRequestDispatcher(url);
-		 dispatcher.forward(request, response);
+		String url = "/board/boardUpdate.jsp";
+		
+		String num = request.getParameter("num");
+
+		BoardDAO bDao = BoardDAO.getInstance();
+
+		bDao.upadateReadCount(num);
+
+		BoardVO bVo = bDao.selectOneBoardByNum(num);
+
+		request.setAttribute("board", bVo);
+
+		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+		dispatcher.forward(request, response);
+
 	}
 }

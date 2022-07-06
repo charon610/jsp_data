@@ -46,7 +46,7 @@ public class ProductWriteServlet extends HttpServlet {
 		
 		ServletContext context = getServletContext();
 		String path = context.getRealPath("upload");
-		String encType = ("UTF-8");
+		String encType = "UTF-8";
 		int sizeLimit = 20 * 1024 * 1024;
 		
 		MultipartRequest multi = new MultipartRequest(request, path, sizeLimit, encType, new DefaultFileRenamePolicy());
@@ -65,9 +65,5 @@ public class ProductWriteServlet extends HttpServlet {
 		pDao.insertProduct(pVo);
 		
 		response.sendRedirect("productList.do");
-		
-		
-		
 	}
-
 }

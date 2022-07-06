@@ -59,7 +59,7 @@ public class BoardDAO {
 	}
 
 	public void insertBoard(BoardVO bVo) {
-		String sql = "insert into board(num, name, email, pass, title, content) values(board_seq.nextval, ?, ?, ?, ?, ?, ?)";
+		String sql = "insert into board(num, name, email, pass, title, content) values(board_seq.nextval, ?, ?, ?, ?, ?)";
 
 		Connection conn = null;
 		PreparedStatement pstmt = null;
