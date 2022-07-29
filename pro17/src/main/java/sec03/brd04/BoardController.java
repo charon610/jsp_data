@@ -109,8 +109,8 @@ public class BoardController extends HttpServlet {
 			}
 
 
-			RequestDispatcher dispatch = request.getRequestDispatcher(nextPage);
-			dispatch.forward(request, response);
+				RequestDispatcher dispatch = request.getRequestDispatcher(nextPage);
+				dispatch.forward(request, response);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

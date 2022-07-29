@@ -6,14 +6,14 @@
 <link rel="stylesheet" href="${contextPath}/css/style.css"/>
 <script src="${contextPath}/js/jquery-3.5.1.min.js"></script>
 
-<div id="cata" class="box2">
-  <ul>
-    <li><a href="${contextPath}/list.do?book_kind=100">문학</a>
-    <li><a href="${contextPath}/list.do?book_kind=200">어학</a>
-    <li><a href="${contextPath}/list.do?book_kind=300">컴퓨터</a>
-    <li><a href="${contextPath}/list.do?book_kind=all">전체</a>
+<div class = "side">
+  <ul class="menu">
+    <li class="menu-item"><a href="${contextPath}/list.do?book_kind=100" class="menu-link">문학</a>
+    <li class="menu-item"><a href="${contextPath}/list.do?book_kind=200" class="menu-link">어학</a>
+    <li class="menu-item"><a href="${contextPath}/list.do?book_kind=300" class="menu-link">컴퓨터</a>
+    <li class="menu-item"><a href="${contextPath}/list.do?book_kind=all" class="menu-link">전체</a>
   </ul>
-</div>
+</div>	
 
 <div id="shop" class="box2">
   <c:if test="${book_kind=='100'}">

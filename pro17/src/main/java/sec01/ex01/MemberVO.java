@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class MemberVO {
 
-	String id;
-	String pwd;
-	String name;
-	String email;
-	Date joinDate;
+	private String id;
+	private String pwd;
+	private String name;
+	private String email;
+	private Date joinDate;
 	
 	public MemberVO() {
 		System.out.println("MemberVO 생성자 호출");

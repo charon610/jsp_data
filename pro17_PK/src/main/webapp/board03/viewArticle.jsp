@@ -40,7 +40,7 @@
   </tr>
   <tr>
    <td width="150" align="center" bgcolor="#FF9933">
-      제목 
+      글제목 
    </td>
    <td>
     <input type="text" value="${article.title }"  name="title"  id="i_title" disabled />
@@ -48,7 +48,7 @@
   </tr>
   <tr>
    <td width="150" align="center" bgcolor="#FF9933">
-      내용
+      글내용
    </td>
    <td>
     <textarea rows="20" cols="60"  name="content"  id="i_content"  disabled />${article.content }</textarea>

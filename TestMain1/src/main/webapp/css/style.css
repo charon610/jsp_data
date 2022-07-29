@@ -47,6 +47,47 @@ div{
 ul li{
   list-style:none; 
 }
+
+/* 추가 */
+ul.menu{
+	background-color: #1C1E57
+}
+
+.side{
+	background-color: #1C1E57
+}
+
+.loginmenu{
+	padding-top: 17px;
+}
+
+.menu {
+  display: flex;
+}
+.menu-item {
+  background-color: #1C1E57;
+  flex-grow: 1;
+  transition: 0.5s;
+}
+.menu-item:hover {
+  background-color: #51AA63;
+  flex-grow: 1.2;
+}
+.menu-link {
+  /* block이면 마우스 클릭영역이 더 커짐, a태그는 inline으로서 클릭영역이 콘텐츠에 한정됨*/
+  display: block; 
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+.menu-link:hover {
+  color: white;
+}
+
+
 /*ul, li{
   margin : 0px;
   padding: 0px;

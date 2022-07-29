@@ -35,14 +35,14 @@
   <meta http-equiv="Refresh" content="0;url=${contextPath}/index.do">
 </c:if>
 
-<div id="cata" class="box2">
-  <ul>
-    <li><a href="${contextPath}/list.do?book_kind=100">문학</a>
-    <li><a href="${contextPath}/list.do?book_kind=200">어학</a>
-    <li><a href="${contextPath}/list.do?book_kind=300">컴퓨터</a>
-    <li><a href="${contextPath}/list.do?book_kind=all">전체</a>
+<div class = "side">
+  <ul class="menu">
+    <li class="menu-item"><a href="${contextPath}/list.do?book_kind=100" class="menu-link">문학</a>
+    <li class="menu-item"><a href="${contextPath}/list.do?book_kind=200" class="menu-link">어학</a>
+    <li class="menu-item"><a href="${contextPath}/list.do?book_kind=300" class="menu-link">컴퓨터</a>
+    <li class="menu-item"><a href="${contextPath}/list.do?book_kind=all" class="menu-link">전체</a>
   </ul>
-</div>
+</div>	
 <div id="goShop">
   <button id="conShopping">쇼핑계속</button>
   <button id="shopMain">메인으로</button>
